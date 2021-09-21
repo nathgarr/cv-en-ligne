@@ -12,3 +12,8 @@ body{
 div p{
     padding:0px 50px;
 }
+div img{
+    width: 350px;
+    height: auto;
+    padding: 0 25px;
+}
