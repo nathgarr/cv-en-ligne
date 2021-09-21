@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    background-color: rgb(32, 30, 32);
+    color: blueviolet;
+    margin: 0;
+    padding: 0;
+}
+div p{
+    padding:0px 50px;
+}
