@@ -4958,6 +4958,7 @@ textarea.form-control-lg {
   display: flex;
   height: 1rem;
   overflow: hidden;
+  margin-bottom: 20px;
   font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;

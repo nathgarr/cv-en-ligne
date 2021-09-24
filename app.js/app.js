@@ -1,0 +1,21 @@
+const theme = document.querySelectorAll('.theme')
+
+theme.forEach((item) => {
+    item.addEventListener('click', (event) => {
+        console.log(event.target.id);
+        document.body.classList.remove("verdantTheme", "salmonTheme", "redTheme");
+        switch(event.target.id){
+            case "verdant":
+                document.body.classList.add("verdantTheme");
+                break;
+            case "salmon":
+                document.body.classList.add("salmonTheme");
+                break;
+            case "red":
+                document.body.classList.add("redTheme");
+                break;
+            default:
+                null;
+        }
+    })
+})

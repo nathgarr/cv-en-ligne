@@ -3,9 +3,9 @@
     padding: 0;
 }
 body{
-    position: relative;
     background-color: rgb(32, 30, 32);
     color: rgb(43, 226, 171);
+    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,10 @@ div img{
 .white{
     background-color: white !important;
 }
-/* -------------------------------------------------------------------------- animation  */
+.nav-item{
+    margin-left: 100px;
+}
+/* -------------------------------------------------------------------------- animation chargement  */
 .loading{
     position: relative;
     width: 200px;
@@ -86,7 +89,7 @@ div img{
     color: rgb(43, 226, 171);
     transition: transform 0.4s cubic-bezier(0.23,1.83,0.42,1.19);
 }
-.box p{
+.box p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,24 +102,23 @@ div img{
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    border: 3px solid rgb(43, 226, 171);
+    border: 3px solid #f1f1f1;
     animation: 1s linear infinite alternate boxMagic, 4s linear infinite spinning;
-    padding-top: 400px;
 }
 @keyframes boxMagic{
     from{
         box-shadow: 
-        0 0 0 #feac5e,
-        0 0 0 #c779d0,
-        0 0 0 #4bc0c8,
-        0 0 0 #42db75;
+        0 0 0 #e93d09,
+        0 0 0 #ab18bb,
+        0 0 0 #9ec75c,
+        0 0 0 rgb(43, 226, 171);
     }
     to{
         box-shadow: 
-        0 -15px 0 #feac5e,
-        -15px 0 0 #c779d0,
-        0 15px 0 #4bc0c8,
-        15px 0 0 #42db75;
+        0 -15px 0 #e93d09,
+        -15px 0 0 #ab18bb,
+        0 15px 0 #9ec75c,
+        15px 0 0 rgb(43, 226, 171);
     }
 }
 @keyframes spinning{
@@ -126,4 +128,32 @@ div img{
     to{
         transform: rotate(360deg);
     }
+}
+/* js css */
+
+.theme{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#verdant{
+    background-color: rgb(112, 112, 51);
+}
+#salmon{
+    background-color: salmon;
+}
+#red{
+    background-color: rgb(218, 125, 82);
+}
+.verdantTheme{
+    background: rgb(112, 112, 51);
+}
+.salmonTheme{
+    background: salmon;
+    color: #ab18bb;
+}
+.redTheme{
+    background: rgb(218, 125, 82);
+    color: white;
 }
