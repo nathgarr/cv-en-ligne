@@ -58,29 +58,29 @@ div img{
 }
 @keyframes animate{
     0%{
-        transform: translateZ(-100px);
+        transform: translateZ(-70px);
         width: 100%;
         height: 100%;
     }
-    /*------------------------- +100px pour monter */
+    /*------------------------- +70px pour monter */
     25%{
-        transform: translateZ(100px);
+        transform: translateZ(70px);
         width: 100%;
         height: 100%;
     }
     50%{
-        transform: translateZ(100px);
+        transform: translateZ(70px);
         width: 35%;
         height: 35%;
     }
     75%{
-        transform: translateZ(-100px);
+        transform: translateZ(-70px);
         width: 35%;
         height: 35%;
     }
-    /*--------------------- -100px pour decendre */
+    /*--------------------- -70px pour decendre */
     100%{
-        transform: translateZ(-100px);
+        transform: translateZ(-70px);
         width: 100%;
         height: 100%;
     }
@@ -168,4 +168,62 @@ div img{
 .resetTheme{
     border-color: rgb(32, 30, 32);
     color: rgb(43, 226, 171);
+}
+/* **************************************************************************************************************** media */
+@media(max-width:768px){
+    .circle{
+        height: 220px;
+        width: 220px;
+    }
+    .loading{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transform:perspective(500px) rotateX(45deg);
+    }
+    .loading span{
+        position: absolute;
+        display: block;
+        border: 10px solid rgb(43, 226, 171);
+        border-radius: 50%;
+        box-shadow: 0 10px 0 rgb(43, 226, 171), inset 0 10px 0 rgb(43, 226, 171);
+        animation: animate 4.5s ease-in-out infinite;
+    }
+    @keyframes animate{
+        0%{
+            transform: translateZ(-50px);
+            width: 100%;
+            height: 100%;
+        }
+        /*------------------------- +50px pour monter */
+        25%{
+            transform: translateZ(50px);
+            width: 100%;
+            height: 100%;
+        }
+        50%{
+            transform: translateZ(50px);
+            width: 35%;
+            height: 35%;
+        }
+        75%{
+            transform: translateZ(-50px);
+            width: 35%;
+            height: 35%;
+        }
+        /*--------------------- -50px pour decendre */
+        100%{
+            transform: translateZ(-50px);
+            width: 100%;
+            height: 100%;
+        }
+    }
+    iframe{
+        width: 270px;
+        height: 300px;
+    }
 }
