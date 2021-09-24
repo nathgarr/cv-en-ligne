@@ -9,6 +9,11 @@ body{
     margin: 0;
     padding: 0;
 }
+a{
+    height: 75%;
+    width: 75%;
+    margin-bottom: 5%;
+}
 div p{
     padding:0px 50px;
 }
@@ -137,6 +142,9 @@ div img{
     border-radius: 15px;
     cursor: pointer;
 }
+#reset{
+    background-color: rgb(32, 30, 32);
+}
 #verdant{
     background-color: rgb(112, 112, 51);
 }
@@ -156,4 +164,8 @@ div img{
 .redTheme{
     background: rgb(218, 125, 82);
     color: white;
+}
+.resetTheme{
+    border-color: rgb(32, 30, 32);
+    color: rgb(43, 226, 171);
 }
