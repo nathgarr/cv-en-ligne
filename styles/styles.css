@@ -1,3 +1,4 @@
+/* -----------------------------------------------------------------------balise général */
 *{
     margin: 0;
     padding: 0;
@@ -22,11 +23,33 @@ div img{
     height: auto;
     margin-bottom: 4%;
 }
+a img{
+    border-radius: 3vh;
+}
+/*----------------------------------------------------------------------------------- class */
 .white{
     background-color: white !important;
 }
 .nav-item{
     margin-left: 100px;
+}
+
+.txtx{
+    text-align: justify;
+    padding: 10px;
+}
+.icons{
+    height:75px;
+    width: auto;
+}
+/* -----------------------------------------------------------------------------------------------id */
+#Déployer{
+    width: 90%;
+    border: rgb(43, 226, 171) 3px ridge;
+    border-radius: 5vh;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 /* -------------------------------------------------------------------------- animation chargement  */
 .loading{
@@ -134,7 +157,7 @@ div img{
         transform: rotate(360deg);
     }
 }
-/* js css */
+/*------------------------------------------------------------------------------------------------- js css */
 
 .theme{
     height: 30px;
@@ -195,29 +218,29 @@ div img{
     }
     @keyframes animate{
         0%{
-            transform: translateZ(-50px);
+            transform: translateZ(-40px);
             width: 100%;
             height: 100%;
         }
-        /*------------------------- +50px pour monter */
+        /*------------------------- +40px pour monter */
         25%{
-            transform: translateZ(50px);
+            transform: translateZ(40px);
             width: 100%;
             height: 100%;
         }
         50%{
-            transform: translateZ(50px);
+            transform: translateZ(40px);
             width: 35%;
             height: 35%;
         }
         75%{
-            transform: translateZ(-50px);
+            transform: translateZ(-40px);
             width: 35%;
             height: 35%;
         }
-        /*--------------------- -50px pour decendre */
+        /*--------------------- -40px pour decendre */
         100%{
-            transform: translateZ(-50px);
+            transform: translateZ(-40px);
             width: 100%;
             height: 100%;
         }
