@@ -26,6 +26,15 @@ div img{
 a img{
     border-radius: 3vh;
 }
+h3{
+    text-align: center;
+}
+
+.row{
+    margin: 0px;
+    padding: 0px;
+    width: 98%;
+}
 /*----------------------------------------------------------------------------------- class */
 .white{
     background-color: white !important;
@@ -33,14 +42,16 @@ a img{
 .nav-item{
     margin-left: 100px;
 }
-
-.txtx{
-    text-align: justify;
-    padding: 10px;
-}
 .icons{
     height:75px;
     width: auto;
+}
+.back-to-top{
+    position: sticky;
+    width: 75px;
+    height: 75px;
+    top: 50%;
+    left: 95%;
 }
 /* -----------------------------------------------------------------------------------------------id */
 #Déployer{
