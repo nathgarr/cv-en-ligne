@@ -51,7 +51,7 @@ h3{
     width: 75px;
     height: 75px;
     top: 50%;
-    left: 95%;
+    left: 93%;
 }
 /* -----------------------------------------------------------------------------------------------id */
 #Déployer{
@@ -259,5 +259,16 @@ h3{
     iframe{
         width: 270px;
         height: 300px;
+    }
+    .icons{
+        height:40px;
+        width: auto;
+    }
+    .back-to-top{
+        width: 40px;
+        height: 40px;
+    }
+    .row{
+        width: 95%;
     }
 }
