@@ -21,3 +21,13 @@ theme.forEach((item) => {
         }
     })
 })
+
+//variable
+
+$animate = $('.animate')
+
+ $(span).on('keypress', function(e) {
+     if(e.which == 13){
+         $($animate).toggleClass('animate');
+     }
+ })
