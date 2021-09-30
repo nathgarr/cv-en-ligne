@@ -1,9 +1,19 @@
+//variable
+
 const theme = document.querySelectorAll('.theme')
+
+//event
 
 theme.forEach((item) => {
     item.addEventListener('click', (event) => {
         console.log(event.target.id);
+
+        //reset theme
+
         document.body.classList.remove("verdantTheme", "salmonTheme", "redTheme", "resetTheme");
+
+        //interupteur
+
         switch(event.target.id){
             case "verdant":
                 document.body.classList.add("verdantTheme");
@@ -22,12 +32,14 @@ theme.forEach((item) => {
     })
 })
 
-//variable
+var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
+var collapseList = collapseElementList.map(function (collapseEl) {
+  return new bootstrap.Collapse(collapseEl)
+})
 
-$animate = $('.animate')
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
 
- $(span).on('keypress', function(e) {
-     if(e.which == 13){
-         $($animate).toggleClass('animate');
-     }
- })
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})

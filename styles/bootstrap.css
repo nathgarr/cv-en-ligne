@@ -4452,9 +4452,10 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(32, 30, 32);
+  color: rgb(43, 226, 171);
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid var(--bs-pink);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -5505,24 +5506,29 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
+  background-color: rgb(32, 30, 32);
 }
 .modal-header .btn-close {
   padding: 0.5rem 0.5rem;
   margin: -0.5rem -0.5rem -0.5rem auto;
+  background-color: rgb(32, 30, 32);
 }
 
 .modal-title {
   margin-bottom: 0;
   line-height: 1.5;
+  background-color: rgb(32, 30, 32);
+  color: rgb(43, 226, 171);
 }
 
 .modal-body {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
+  background-color: rgb(32, 30, 32);
+  color: rgb(43, 226, 171);
 }
 
 .modal-footer {
@@ -5532,7 +5538,8 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  color: rgb(43, 226, 171);
+  background-color: rgb(32, 30, 32);
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
